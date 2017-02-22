@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+	<input type="text" v-model="hello" value="">
+    <div id="template">
+        {{hello}}
+    </div>
+    <div class="template">
+        {{bind}}
+    </div>
+
+<script src="../Vue.js" type="text/javascript"></script>
+</body>
+<script>
+	 var vue = new Vue({
+        ele: '#template',
+    });
+    var vue1 = new Vue({
+        ele: '.template',
+        data: {
+            bind: 'hey i am a vue lover'
+        }
+    })
+</script>
+</html>
